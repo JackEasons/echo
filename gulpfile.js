@@ -11,8 +11,8 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var reload = browserSync.reload;
 
-gulp.task('clean', function(cb) {
-  del('dist', cb);
+gulp.task('clean', function() {
+  return del('dist');
 });
 
 
